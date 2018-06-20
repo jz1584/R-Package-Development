@@ -76,8 +76,15 @@ devtools::document()
 devtools::use_data_raw()
 ```
 
-5. refreshing all (r) files in the package before testing all functions within the package
+5. refresh all (r) files in the package before testing all functions within the package
 ```{r eval=F}
 devtools::load_all('.')
 ```
+
+6. install the package from the source
+```{r eval=F}
+devtools::install(RfileName)
+```
+
+
 
