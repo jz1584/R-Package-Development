@@ -1,0 +1,57 @@
+---
+title: "Rstudio & Rconnect Server Topics"
+author: "Jason"
+date: "6/11/2018"
+output: html_document
+---
+
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+      margin: 0px;
+  }
+td {  /* Table  */
+  font-size: 8px;
+  
+}
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+}
+h1 { /* Header 1 */
+  font-size: 30px;
+  color: DarkBlue;
+}
+h2 { /* Header 2 */
+    font-size: 35px;
+  color: DarkBlue;
+}
+h3 { /* Header 3 */
+  background: #cce5ff;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+
+ol { /* ordered list style */
+    font-size: 20px;font-weight:bold;}
+
+ul {/* dot list style */
+font-size: 20px;}
+
+
+</style>
+
+
+## - Package development in local share
+-  [Read more](Package_Developement.html)
+
+## - Building Private repository in local share
+-  [Read more](Private_Repository.html)

@@ -1,0 +1,83 @@
+---
+title: "Package Developement"
+date: "6/11/2018"
+output: html_document
+---
+
+
+<style type="text/css">
+.main-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  }
+td {  /* Table  */
+  font-size: 8px;
+  
+}
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+}
+h1 { /* Header 1 */
+  font-size: 30px;
+  color: DarkBlue;
+}
+h2 { /* Header 2 */
+    font-size: 25px;
+  color: DarkBlue;
+}
+h3 { /* Header 3 */
+  background: #cce5ff;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+
+ol { /* ordered list style */
+    font-size: 20px;font-weight:bold;}
+
+ul {/* dot list style */
+font-size: 15px;}
+
+
+</style>
+
+
+## Package development
+### One way of developing R packages is using the devtools package, and usethis package. 
+
+
+1. create a r file that will bag functions for the packages
+```{r eval=F }
+  usethis::use_r('RfileName')
+```
+
+2. save existing data (called df, for example) into a data directory (It will create a directory if not available yet)
+```{r eval=F}
+devtools::use_data(df,overwrite = TRUE)
+```
+ 
+3. automate documentation after insert roxygen skeleton into each function (Ctrl + shift + Alt + R)
+```{r eval=F}
+devtools::document()
+```
+ 
+4. automate documentation for internal data (pending)
+```{r eval=F}
+devtools::use_data_raw()
+```
+
+5. refreshing all (r) files in the package before testing all functions within the package
+```{r eval=F}
+devtools::load_all('.')
+```
+
