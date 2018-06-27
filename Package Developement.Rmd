@@ -71,20 +71,26 @@ devtools::use_data(df,overwrite = TRUE)
 devtools::document()
 ```
  
-4. automate documentation for internal data (pending)
+4. automate documentation for internal data (detail skipped)
 ```{r eval=F}
 devtools::use_data_raw()
 ```
 
-5. refresh all (r) files in the package before testing all functions within the package
+5. create a rmarkdown file for automate md file for github
+```{r eval=F}
+devtools::use_readme_rmd()
+```
+
+6. refresh all (r) files in the package before testing all functions within the package
 ```{r eval=F}
 devtools::load_all('.')
 ```
 
-6. install the package from the source
+7. install the package from the source (package could be saved in github as well)
 ```{r eval=F}
 devtools::install(RfileName)
 ```
+
 
 
 

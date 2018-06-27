@@ -185,15 +185,19 @@ font-size: 15px;}
 </ol>
 <pre class="r"><code>devtools::document()</code></pre>
 <ol start="4" style="list-style-type: decimal">
-<li>automate documentation for internal data (pending)</li>
+<li>automate documentation for internal data (detail skipped)</li>
 </ol>
 <pre class="r"><code>devtools::use_data_raw()</code></pre>
 <ol start="5" style="list-style-type: decimal">
+<li>create a rmarkdown file for automate md file for github</li>
+</ol>
+<pre class="r"><code>devtools::use_readme_rmd()</code></pre>
+<ol start="6" style="list-style-type: decimal">
 <li>refresh all (r) files in the package before testing all functions within the package</li>
 </ol>
 <pre class="r"><code>devtools::load_all('.')</code></pre>
-<ol start="6" style="list-style-type: decimal">
-<li>install the package from the source</li>
+<ol start="7" style="list-style-type: decimal">
+<li>install the package from the source (package could be saved in github as well)</li>
 </ol>
 <pre class="r"><code>devtools::install(RfileName)</code></pre>
 </div>

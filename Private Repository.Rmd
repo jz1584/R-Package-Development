@@ -62,6 +62,7 @@ font-size: 15px;
 miniCRAN::addLocalPackage(pkgs = 'ERMdata',pkgPath = '../../Packages Development/2018/',path= '/DataERMUsers/ERMrepository/', build=T)
 ```
 
+
 2. In addtion, you may want to include the local repository location in the .Rprofile if you would like to set it as one of default repositories (eg. packrat in Rconnect applications will know where to grab the package) or - 
 ```{r eval= FALSE}
 local({
