@@ -6,7 +6,11 @@ output: html_document
 ---
 
 <style type="text/css">
-
+.main-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 body{ /* Normal  */
       font-size: 12px;
       margin: 0px;
@@ -50,8 +54,10 @@ font-size: 20px;}
 </style>
 
 
-## - Package development in local share
+## - Package development in a local drive
 -  [Read more](Package_Developement.html)
 
-## - Building Private repository in local share
+## - Building Private repository in local drive or  Public Repository in github 
 -  [Read more](Private_Repository.html)
+
+
