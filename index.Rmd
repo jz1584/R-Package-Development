@@ -1,15 +1,15 @@
 ---
 title: "Rstudio & Rconnect Server Topics"
 author: "Jason"
-date: "6/11/2018"
+date: 6.11.18
 output: html_document
 ---
 
 <style type="text/css">
 .main-container {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 100px;
+  margin-right: 0;
 }
 body{ /* Normal  */
       font-size: 12px;
@@ -20,20 +20,20 @@ td {  /* Table  */
   
 }
 h1.title {
-  font-size: 38px;
+  font-size: 30px;
   color: DarkRed;
 }
 h1 { /* Header 1 */
-  font-size: 30px;
-  color: DarkBlue;
+  font-size: 25px;
+  color: Black;
 }
 h2 { /* Header 2 */
-    font-size: 35px;
-  color: DarkBlue;
+    font-size: 25px;
+  color: Black;
 }
 h3 { /* Header 3 */
   background: #cce5ff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Times New Roman", Times, serif;
   color: DarkBlue;
 }
@@ -41,23 +41,23 @@ code.r{ /* Code block */
     font-size: 12px;
 }
 pre { /* Code block - determines code spacing between lines */
-    font-size: 14px;
+    font-size: 8px;
 }
 
 ol { /* ordered list style */
     font-size: 20px;font-weight:bold;}
 
 ul {/* dot list style */
-font-size: 20px;}
+font-size: 20px; color:red;}
 
 
 </style>
 
 
-## - Package development in a local drive
--  [Read more](Package_Developement.html)
+## - R package development (in a local drive)
+-  [Click here](Package_Developement.html)
 
-## - Building Private repository in local drive or  Public Repository in github 
--  [Read more](Private_Repository.html)
+## - Building a private/public repository in local drive (or github) 
+-  [Click here](Private_Repository.html)
 
-
+## - Simple Examples..
