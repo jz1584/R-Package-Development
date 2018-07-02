@@ -173,9 +173,9 @@ font-size: 15px;
 <div id="after-building-packages-in-local-drive-you-may-want-to-share-it-within-the-same-rstudio-server-or-inbetween-r-connect-and-rstudio-server.-having-a-local-private-repository-could-be-one-of-the-solutions." class="section level3">
 <h3>After building packages in local drive, you may want to share it within the same rstudio server or inbetween R-connect and Rstudio Server. Having a local private repository could be one of the solutions.</h3>
 <ul>
-<li>Putting devtolls package into local repository (for example, adding a package called ‘ERMdata’ in to private repository) -</li>
+<li>Putting devtolls package into local repository (for example, adding a package called ‘Urdata’ in to private repository) -</li>
 </ul>
-<pre class="r"><code>miniCRAN::addLocalPackage(pkgs = 'ERMdata',pkgPath = '../../Packages Development/2018/',path= '/DataERMUsers/ERMrepository/', build=T)</code></pre>
+<pre class="r"><code>miniCRAN::addLocalPackage(pkgs = 'Urdata',pkgPath = '../../Packages Development/2018/',path= '/UrrepositoryDirectory/', build=T)</code></pre>
 </div>
 </div>
 <div id="public-repository" class="section level2">
@@ -194,7 +194,7 @@ git push your-local-pakcage </code></pre>
 <pre class="r"><code>local({
   r &lt;- getOption(&quot;repos&quot;)
   r[&quot;CRAN&quot;] &lt;- &quot;https://cran.rstudio.com/&quot; # exiting default repository
-  r[&quot;ERMrepository&quot;] &lt;- &quot;file://yourPath/ERMrepository&quot; # for example, local private repository
+  r[&quot;ERMrepository&quot;] &lt;- &quot;file://UrrepositoryDirectory&quot; # for example, local private repository
   options(repos = r)
 })</code></pre>
 </div>

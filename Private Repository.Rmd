@@ -57,9 +57,9 @@ font-size: 15px;
 ## Private Repository
 ### After building packages in local drive, you may want to share it within the same rstudio server or inbetween R-connect and Rstudio Server. Having a local private repository could be one of the solutions. 
 
-* Putting devtolls package into local repository (for example, adding a package called 'ERMdata' in  to private repository) -
+* Putting devtolls package into local repository (for example, adding a package called 'Urdata' in  to private repository) -
 ```{r eval=FALSE}
-miniCRAN::addLocalPackage(pkgs = 'ERMdata',pkgPath = '../../Packages Development/2018/',path= '/DataERMUsers/ERMrepository/', build=T)
+miniCRAN::addLocalPackage(pkgs = 'Urdata',pkgPath = '../../Packages Development/2018/',path= '/UrrepositoryDirectory/', build=T)
 ```
 
 ## Public Repository
@@ -76,7 +76,7 @@ git push your-local-pakcage
 local({
   r <- getOption("repos")
   r["CRAN"] <- "https://cran.rstudio.com/" # exiting default repository
-  r["ERMrepository"] <- "file://yourPath/ERMrepository" # for example, local private repository
+  r["ERMrepository"] <- "file://UrrepositoryDirectory" # for example, local private repository
   options(repos = r)
 })
 ```

@@ -1,5 +1,5 @@
 ---
-title: "Rstudio & Rconnect Server Topics"
+title: "Topics in R"
 author: "Jason"
 date: 6.11.18
 output: html_document
