@@ -53,6 +53,10 @@ font-size: 15px;}
 </style>
 
 
+
+####Package structure
+![picture source: https://methodsblog.files.wordpress.com/2015/11/stott-1.jpg?w=584&h=264](pics/scr 2.PNG)
+
 ## Package development 
 ### One way of developing R packages is using the devtools, and usethis package [https://cran.r-project.org/web/packages/usethis/usethis.pdf](https://cran.r-project.org/web/packages/usethis/usethis.pdf). 
 
