@@ -2,7 +2,7 @@
 title: "A Quickstart Guide for Package Developement"
 output:
   html_document: default
-date: "6/11/2018"
+
 ---
 
 
