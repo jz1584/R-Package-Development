@@ -8,8 +8,8 @@ output:
 
 <style type="text/css">
 .main-container {
-  max-width: 1200px;
-  margin-left: auto;
+  max-width: 800px;
+  margin-left: 200px;
   margin-right: auto;
 }
 
@@ -58,8 +58,7 @@ font-size: 15px;}
 ![picture source: https://methodsblog.files.wordpress.com/2015/11/stott-1.jpg?w=584&h=264](pics/scr 2.PNG)
 
 ## Package development 
-### One way of developing R packages is using the devtools, and usethis package [https://cran.r-project.org/web/packages/usethis/usethis.pdf](https://cran.r-project.org/web/packages/usethis/usethis.pdf). 
-
+### One way of developing R packages is using the devtools, and usethis package [https://cran.r-project.org/web/packages/usethis/usethis.pdf](https://cran.r-project.org/web/packages/usethis/usethis.pdf). R folder, man folder, DESCRIPTION file and NAMESPACE file are the minimum required content to build a package. 
 0. create a project in a package-name new folder in Rstudio
 
 1. under the rstudio project, create a r file that will bag functions for your packages
@@ -67,7 +66,7 @@ font-size: 15px;}
   usethis::use_r('RfileName')
 ```
 
-2. automate documentation after insert roxygen skeleton into each function (Ctrl + shift + Alt + R)
+2. automate documentation after insert roxygen skeleton into each function (code->Insert Roxygen Skeleton in rstudio IDE or Ctrl + shift + Alt + R on keyboard)
 ```{r eval=F}
 devtools::document()
 ```

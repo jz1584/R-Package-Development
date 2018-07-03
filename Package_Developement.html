@@ -124,8 +124,8 @@ $(document).ready(function () {
 
 <style type="text/css">
 .main-container {
-  max-width: 1200px;
-  margin-left: auto;
+  max-width: 800px;
+  margin-left: 200px;
   margin-right: auto;
 }
 
@@ -176,15 +176,15 @@ font-size: 15px;}
 </div>
 <div id="package-development" class="section level2">
 <h2>Package development</h2>
-<div id="one-way-of-developing-r-packages-is-using-the-devtools-and-usethis-package-httpscran.r-project.orgwebpackagesusethisusethis.pdf." class="section level3">
-<h3>One way of developing R packages is using the devtools, and usethis package <a href="https://cran.r-project.org/web/packages/usethis/usethis.pdf" class="uri">https://cran.r-project.org/web/packages/usethis/usethis.pdf</a>.</h3>
+<div id="one-way-of-developing-r-packages-is-using-the-devtools-and-usethis-package-httpscran.r-project.orgwebpackagesusethisusethis.pdf.-r-folder-man-folder-description-file-and-namespace-file-are-the-minimum-required-content-to-build-a-package." class="section level3">
+<h3>One way of developing R packages is using the devtools, and usethis package <a href="https://cran.r-project.org/web/packages/usethis/usethis.pdf" class="uri">https://cran.r-project.org/web/packages/usethis/usethis.pdf</a>. R folder, man folder, DESCRIPTION file and NAMESPACE file are the minimum required content to build a package.</h3>
 <ol start="0" style="list-style-type: decimal">
 <li><p>create a project in a package-name new folder in Rstudio</p></li>
 <li><p>under the rstudio project, create a r file that will bag functions for your packages</p></li>
 </ol>
 <pre class="r"><code>  usethis::use_r('RfileName')</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>automate documentation after insert roxygen skeleton into each function (Ctrl + shift + Alt + R)</li>
+<li>automate documentation after insert roxygen skeleton into each function (code-&gt;Insert Roxygen Skeleton in rstudio IDE or Ctrl + shift + Alt + R on keyboard)</li>
 </ol>
 <pre class="r"><code>devtools::document()</code></pre>
 <ol start="3" style="list-style-type: decimal">
