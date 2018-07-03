@@ -66,7 +66,7 @@ font-size: 15px;}
   usethis::use_r('RfileName')
 ```
 
-2. automate documentation after insert roxygen skeleton into each function (code->Insert Roxygen Skeleton in rstudio IDE or Ctrl + shift + Alt + R on keyboard)
+2. automate documentation after [insert roxygen skeleton](pics/Roxygen.PNG) into each function (code->Insert Roxygen Skeleton in rstudio IDE or Ctrl + shift + Alt + R on keyboard)
 ```{r eval=F}
 devtools::document()
 ```
@@ -77,7 +77,6 @@ devtools::use_data(df,overwrite = TRUE)
 ```
  
 
- 
 4. If you need to write R-script to generate your data for your package, your Rscript should be save in data_raw folder. Documentation for internal data detail skipped here
 ```{r eval=F}
 devtools::use_data_raw()
