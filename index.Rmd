@@ -1,7 +1,7 @@
 ---
 title: "Topics in R"
 author: "Jason"
-date: Since 6.11.18
+date: created on 6.11.18
 output: html_document
 ---
 
@@ -48,16 +48,14 @@ ol { /* ordered list style */
     font-size: 20px;font-weight:bold;}
 
 ul {/* dot list style */
-font-size: 20px; color:red;}
+font-size: 20px; color:DarkRed;}
 
 
 </style>
 
 
-## - R package development (in a local drive)
--  [Click here](Package_Developement.html)
+-  ##[R package development](Package_Developement.html)
 
-## - Building a private/public repository in local drive (or github) 
--  [Click here](Private_Repository.html)
+-  ##[Building a private/public repository in local drive (or github) ](Private_Repository.html)
 
-## - Simple Examples..
+-  ##& more...
