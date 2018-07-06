@@ -58,4 +58,6 @@ font-size: 20px; color:DarkRed;}
 
 -  ##[Building a private/public repository in local drive (or github) ](Private_Repository.html)
 
--  ##& more...
+-  ##[Working with SQL database in R](SQL_Database.html)
+
+- ##& more...
