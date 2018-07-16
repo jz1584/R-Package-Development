@@ -1,63 +1,15 @@
 ---
 title: "SQL Database"
-output:
-  html_document: default
+output: html_document
 ---
 
-
-<style type="text/css">
-.main-container {
-  max-width: 900px;
-  margin-left: 200px;
-  margin-right: auto;
-}
-
-  }
-td {  /* Table  */
-  font-size: 8px;
-  
-}
-h1.title {
-  font-size: 30px;
-  color: DarkRed;
-}
-h1 { /* Header 1 */
-  font-size: 30px;
-  color: DarkBlue;
-}
-h2 { /* Header 2 */
-    font-size: 25px;
-  color: DarkBlue;
-}
-h3 { /* Header 3 */
-  background: #cce5ff;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  color: DarkBlue;
-}
-code.r{ /* Code block */
-    font-size: 12px;
-}
-pre { /* Code block - determines code spacing between lines */
-    font-size: 14px;
-}
-
-ol { /* ordered list style */
-    font-size: 20px;font-weight:bold;}
-
-ul {/* dot list style */
-font-size: 15px;}
-
-
-</style>
-
-
+<link href="style/styles.css" rel="stylesheet">
 
 ## Working with SQL database in R
 ### [DBI and odbc](https://db.rstudio.com/getting-started/connect-to-database) pacakges are used in connecting an existing database.
 
 
-1. Using credentials to create a MS SQL connection - called 'con' -
+- ####Using credentials to create a MS SQL connection - called 'con' -
 ```{r eval=F }
 library(DBI)
 con <- dbConnect(odbc::odbc(), driver = "ODBC Driver 13 for SQL Server", 
@@ -66,24 +18,25 @@ con <- dbConnect(odbc::odbc(), driver = "ODBC Driver 13 for SQL Server",
                  pwd = "your database password")
 ```
 
-2. Querying database data with SQL queries
+- ####Querying database data with SQL queries
 ```{r eval=F}
 dbGetQuery(conn = con,statement = 'your SQL statement query')
 ```
 
-3. Writing a in-memory data frame to a database table 
+- ####Writing a in-memory data frame to a database table 
 ```{r eval=F}
 # writing a new datatable in SQL server database
 dbWriteTable(conn = con,name = 'your new table name',value = 'dataframe name')   
 # Overwriting the exiting database table
-dbWriteTable(conn = con,name = 'your exiting table name',value = 'dataframe name', overwrite = TRUE) # Appending dataframe into the exiting database table
+dbWriteTable(conn = con,name = 'your exiting table name',value = 'dataframe name', overwrite = TRUE) 
+# Appending dataframe into the exiting database table
 dbWriteTable(conn = con,name = 'your exiting table name',value = 'dataframe name', append = TRUE)
 ```
 
-4. Closing the connection if needed
+- ####Closing the connection if needed
 ```{r eval=F}
 dbDisconnect(conn = con)
 ```
  
-### for more functions avialbe in DBI, check [here](http://dbi.r-dbi.org/reference/)
+### for more functions available in DBI, check [here](http://dbi.r-dbi.org/reference/)
 

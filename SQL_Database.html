@@ -122,82 +122,39 @@ $(document).ready(function () {
 </div>
 
 
-<style type="text/css">
-.main-container {
-  max-width: 900px;
-  margin-left: 200px;
-  margin-right: auto;
-}
-
-  }
-td {  /* Table  */
-  font-size: 8px;
-  
-}
-h1.title {
-  font-size: 30px;
-  color: DarkRed;
-}
-h1 { /* Header 1 */
-  font-size: 30px;
-  color: DarkBlue;
-}
-h2 { /* Header 2 */
-    font-size: 25px;
-  color: DarkBlue;
-}
-h3 { /* Header 3 */
-  background: #cce5ff;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  color: DarkBlue;
-}
-code.r{ /* Code block */
-    font-size: 12px;
-}
-pre { /* Code block - determines code spacing between lines */
-    font-size: 14px;
-}
-
-ol { /* ordered list style */
-    font-size: 20px;font-weight:bold;}
-
-ul {/* dot list style */
-font-size: 15px;}
-
-
-</style>
+<p><link href="data:text/css;charset=utf-8,%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%2Emain%2Dcontainer%20%7B%0Amax%2Dwidth%3A%20900px%3B%0Amargin%2Dleft%3A%20200px%3B%0Amargin%2Dright%3A%20auto%3B%0A%7D%0Atd%20%7B%20%0Afont%2Dsize%3A%208px%3B%0A%7D%0Ah1%2Etitle%20%7B%0Afont%2Dsize%3A%2030px%3B%0Acolor%3A%20DarkRed%3B%0A%7D%0Ah1%20%7B%20%0Afont%2Dsize%3A%2030px%3B%0Acolor%3A%20DarkBlue%3B%0A%7D%0Ah2%20%7B%20%0Afont%2Dsize%3A%2025px%3B%0Acolor%3A%20DarkBlue%3B%0A%7D%0Ah3%20%7B%20%0Abackground%3A%20%23cce5ff%3B%0Afont%2Dsize%3A%2020px%3B%0Afont%2Dfamily%3A%20%22Times%20New%20Roman%22%2C%20Times%2C%20serif%3B%0Acolor%3A%20DarkBlue%3B%0A%7D%0Acode%2Er%7B%20%0Afont%2Dsize%3A%2012px%3B%0A%7D%0Apre%20%7B%20%0Afont%2Dsize%3A%2014px%3B%0A%7D%0Aol%20%7B%20%0Afont%2Dsize%3A%2020px%3Bfont%2Dweight%3Abold%3B%7D%0Aul%20%7B%0Afont%2Dsize%3A%2015px%3B%7D%0A%3C%2Fstyle%3E" rel="stylesheet"></p>
 <div id="working-with-sql-database-in-r" class="section level2">
 <h2>Working with SQL database in R</h2>
 <div id="dbi-and-odbc-pacakges-are-used-in-connecting-an-existing-database." class="section level3">
 <h3><a href="https://db.rstudio.com/getting-started/connect-to-database">DBI and odbc</a> pacakges are used in connecting an existing database.</h3>
-<ol style="list-style-type: decimal">
-<li>Using credentials to create a MS SQL connection - called ‘con’ -</li>
-</ol>
+<ul>
+<li><h4 id="using-credentials-to-create-a-ms-sql-connection---called-con--">Using credentials to create a MS SQL connection - called ‘con’ -</h4></li>
+</ul>
 <pre class="r"><code>library(DBI)
 con &lt;- dbConnect(odbc::odbc(), driver = &quot;ODBC Driver 13 for SQL Server&quot;, 
                  server = &quot;database server name&quot;, Database = &quot;database name&quot;, 
                  uid = &quot;your database username&quot;, 
                  pwd = &quot;your database password&quot;)</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>Querying database data with SQL queries</li>
-</ol>
+<ul>
+<li><h4 id="querying-database-data-with-sql-queries">Querying database data with SQL queries</h4></li>
+</ul>
 <pre class="r"><code>dbGetQuery(conn = con,statement = 'your SQL statement query')</code></pre>
-<ol start="3" style="list-style-type: decimal">
-<li>Writing a in-memory data frame to a database table</li>
-</ol>
+<ul>
+<li><h4 id="writing-a-in-memory-data-frame-to-a-database-table">Writing a in-memory data frame to a database table</h4></li>
+</ul>
 <pre class="r"><code># writing a new datatable in SQL server database
 dbWriteTable(conn = con,name = 'your new table name',value = 'dataframe name')   
 # Overwriting the exiting database table
-dbWriteTable(conn = con,name = 'your exiting table name',value = 'dataframe name', overwrite = TRUE) # Appending dataframe into the exiting database table
+dbWriteTable(conn = con,name = 'your exiting table name',value = 'dataframe name', overwrite = TRUE) 
+# Appending dataframe into the exiting database table
 dbWriteTable(conn = con,name = 'your exiting table name',value = 'dataframe name', append = TRUE)</code></pre>
-<ol start="4" style="list-style-type: decimal">
-<li>Closing the connection if needed</li>
-</ol>
+<ul>
+<li><h4 id="closing-the-connection-if-needed">Closing the connection if needed</h4></li>
+</ul>
 <pre class="r"><code>dbDisconnect(conn = con)</code></pre>
 </div>
-<div id="for-more-functions-avialbe-in-dbi-check-here" class="section level3">
-<h3>for more functions avialbe in DBI, check <a href="http://dbi.r-dbi.org/reference/">here</a></h3>
+<div id="for-more-functions-available-in-dbi-check-here" class="section level3">
+<h3>for more functions available in DBI, check <a href="http://dbi.r-dbi.org/reference/">here</a></h3>
 </div>
 </div>
 

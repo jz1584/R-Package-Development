@@ -5,54 +5,7 @@ output:
 
 ---
 
-
-<style type="text/css">
-.main-container {
-  max-width: 800px;
-  margin-left: 200px;
-  margin-right: auto;
-}
-
-  }
-td {  /* Table  */
-  font-size: 8px;
-  
-}
-h1.title {
-  font-size: 30px;
-  color: DarkRed;
-}
-h1 { /* Header 1 */
-  font-size: 30px;
-  color: DarkBlue;
-}
-h2 { /* Header 2 */
-    font-size: 25px;
-  color: DarkBlue;
-}
-h3 { /* Header 3 */
-  background: #cce5ff;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  color: DarkBlue;
-}
-code.r{ /* Code block */
-    font-size: 12px;
-}
-pre { /* Code block - determines code spacing between lines */
-    font-size: 14px;
-}
-
-ol { /* ordered list style */
-    font-size: 20px;font-weight:bold;}
-
-ul {/* dot list style */
-font-size: 15px;}
-
-
-</style>
-
-
+<link href="style/stylePack.css" rel="stylesheet">
 
 ####Package structure
 ![picture source: https://methodsblog.files.wordpress.com/2015/11/stott-1.jpg?w=584&h=264](pics/scr 2.PNG)
