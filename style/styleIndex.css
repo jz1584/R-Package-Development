@@ -1,4 +1,5 @@
 <style type="text/css">
+
 .main-container {
   max-width: 1200px;
   margin-left: 100px;
@@ -7,7 +8,10 @@
 body{ /* Normal  */
       font-size: 12px;
       margin: 0px;
+      background-color: rgba(127,189,227,0.3);
   }
+  
+  
 td {  /* Table  */
   font-size: 8px;
   
@@ -16,14 +20,11 @@ h1.title {
   font-size: 30px;
   color: DarkRed;
 }
-h1 { /* Header 1 */
+h1, h2 { /* Header 1 */
   font-size: 25px;
   color: Black;
 }
-h2 { /* Header 2 */
-    font-size: 25px;
-  color: Black;
-}
+
 h3 { /* Header 3 */
   background: #cce5ff;
   font-size: 18px;
@@ -37,11 +38,10 @@ pre { /* Code block - determines code spacing between lines */
     font-size: 8px;
 }
 
-ol { /* ordered list style */
+ol, ul{ /* ordered list style */ /* dot list style */
     font-size: 20px;font-weight:bold;}
 
-ul {/* dot list style */
-font-size: 20px; color:DarkRed;}
+
 
 
 </style>
